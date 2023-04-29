@@ -1,0 +1,122 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@100;200;300;400;500;600&display=swap');
+* {
+    margin: 0;
+    padding: 0;
+    font-family: 'Inter', sans-serif;
+}
+body {
+    height: 100vh;
+    width: 100vw;
+    background-color: coral;
+}
+#main-page {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: 100%;
+}
+#user-input {
+    border: 5px solid seagreen;
+    border-radius: 90px;
+    padding: 40px;
+    display: flex;
+    flex-direction: column;
+    row-gap: 20px;
+    background-color: chartreuse;
+}
+#user-input h1 {
+    margin-top: 20px;
+    margin-bottom: 20px;
+    font-size: 4rem;
+}
+#user-input label {
+    font-weight: 500;
+    font-size: 2rem;
+}
+#user-input input {
+    border-radius: 8px;
+    font-size: 1rem;
+    padding: 6px 5px;
+}
+#user-input input:focus {
+    outline: none;
+}
+#join-chat {
+    background-color: black;
+    border-radius: 10px;
+    align-self: flex-end;
+    color: white;
+    padding: 0.5rem 0.5rem;
+    font-size: 1.5rem;
+    margin-bottom: 20px;
+}
+#join-chat:hover {
+    box-shadow: 0 0 5px black;
+}
+#chatroom {
+    width: 100%;
+    height: 100%;
+    display: none;
+    flex-flow: column;
+    align-items: stretch;
+}
+.header {
+    background-color: black;
+    color: white;
+    font-size: 3rem;
+    padding: 2% 10%;
+    display: flex;
+    justify-content: space-between;
+    flex-flow: row wrap;
+}
+#exit-btn {
+    padding: 0 20px;
+    font-family: 'Inter', sans-serif;
+    background-color: dodgerblue;
+    border-radius: 1rem;
+}
+#messages {
+    flex-grow: 1;
+    overflow-y: auto;
+    display: flex;
+    flex-flow: column;
+}
+.message {
+    margin: 1rem;
+    background-color: snow;
+    padding: 1rem;
+    border-radius: 0.8rem;
+    align-self: flex-start;
+}
+.sent {
+    margin-left: 10rem;
+    align-self: flex-end;
+}
+.received {
+    margin-right: 10rem;
+}
+.center {
+    align-self: center;
+}
+.footer {
+    padding: .5rem;
+    display: flex;
+    flex-flow: row wrap;
+    column-gap: 5px;
+}
+.footer input {
+    flex-grow: 1;
+    font-size: 1.5rem;
+    padding: .5rem 1rem;
+    border-radius: .5rem;
+}
+.footer input:focus {
+    outline: none;
+}
+.footer button {
+    font-size: 1.5rem;
+    padding: .5rem 1rem;
+    border-radius: .5rem;
+    font-weight: 600;
+}
